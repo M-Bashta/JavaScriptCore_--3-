@@ -2,19 +2,19 @@ function show(data){
     console.log(data);
 }
 
-var value = 0;
-
-if (value>0){
-    show('The number is greater than 0');
-}
-
-else if(value<0){
-    show('The number is less than 0')
-}
-
-else{
-    ('The number is 0')
-}
+//var value = 0;
+//
+//if (value>0){
+//    show('The number is greater than 0');
+//}
+//
+//else if(value<0){
+//    show('The number is less than 0')
+//}
+//
+//else{
+//    ('The number is 0')
+//}
 
 
 var login = 'Admin'
