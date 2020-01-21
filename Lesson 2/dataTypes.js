@@ -16,28 +16,55 @@ function show(data){
 //    ('The number is 0')
 //}
 
+//
+//var login = 'Admin'
+//var password = 'TheMaster'
+//
+//if(login == 'Admin'){
+//    if(password == 'TheMaster'){
+//        show('Welcom');
+//    }
+//    
+//    else if(password == 'Other'){
+//        show('Wrong password')
+//    }
+//    
+//    else{
+//        show('Canceled');
+//    }
+//}
+//
+//else if(login == 'Other'){
+//    show('I dont know you')
+//}
+//
+//else{
+//    show('Canceled')
+//}
 
 var login = 'Admin'
 var password = 'TheMaster'
 
-if(login == 'Admin'){
-    if(password == 'TheMaster'){
-        show('Welcom');
-    }
-    
-    else if(password == 'Other'){
-        show('Wrong password')
-    }
-    
-    else{
+switch(login){
+    case 'Admin':
+        switch(password){
+            case 'TheMaster':
+                show('Welcome');
+                break;
+            case 'Other':
+                show('Wrong password');
+                break;
+            default:
+                show('Canceled');
+                break;
+}
+        break;
+    case 'Other':
+        show('I dont know you');
+        break;
+    default:
         show('Canceled');
-    }
+        break;
 }
 
-else if(login == 'Other'){
-    show('I dont know you')
-}
 
-else{
-    show('Canceled')
-}
